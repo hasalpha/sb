@@ -1,0 +1,39 @@
+.buttonList {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  &:global(.MuiButton-root) {
+    border-radius: 99999px;
+    font-weight: 500;
+    font-size: 1.05rem;
+    height: auto;
+    max-height: 50px;
+    margin-top: 0.5rem;
+    background-color: #fff;
+    border: 1px solid #000;
+  }
+
+  :global(.MuiButton-startIcon) {
+    position: absolute;
+    left: 0;
+    margin: 6px 23px;
+    box-sizing: border-box;
+
+    > svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
+
+.buttonContent {
+  margin: 0.8rem 3.5rem;
+  font-weight: 500;
+}
+
+.section {
+  max-width: 90%;
+  width: 450px;
+}

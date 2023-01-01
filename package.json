@@ -1,0 +1,87 @@
+{
+  "name": "chromeextension",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@fontsource/oxanium": "^4.5.9",
+    "@fontsource/poppins": "^4.5.5",
+    "@fontsource/roboto": "^4.5.5",
+    "@mui/icons-material": "^5.8.0",
+    "@mui/lab": "^5.0.0-alpha.82",
+    "@mui/material": "^5.5.3",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/chrome": "^0.0.188",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^16.11.26",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "@types/redux-form": "^8.3.5",
+    "@types/uuid": "^8.3.4",
+    "axios": "^0.27.2",
+    "react": "^18.0.0",
+    "react-avatar": "^5.0.1",
+    "react-dom": "^18.0.0",
+    "react-redux": "^8.0.1",
+    "react-scripts": "5.0.0",
+    "redux-form": "^8.3.8",
+    "sass": "^1.52.3",
+    "typescript": "^4.6.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "cross-env INLINE_RUNTIME_CHUNK=false react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s ./src",
+    "build-storybook": "build-storybook -s ./src"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.5.15",
+    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addon-interactions": "^6.5.15",
+    "@storybook/addon-links": "^6.5.15",
+    "@storybook/builder-webpack5": "^6.5.15",
+    "@storybook/manager-webpack5": "^6.5.15",
+    "@storybook/node-logger": "^6.5.15",
+    "@storybook/preset-create-react-app": "^4.1.2",
+    "@storybook/react": "^6.5.15",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-plugin-named-exports-order": "^0.0.2",
+    "cross-env": "^7.0.3",
+    "prop-types": "^15.8.1",
+    "webpack": "^5.75.0"
+  }
+}

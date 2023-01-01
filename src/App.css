@@ -1,0 +1,44 @@
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+
+*{
+	margin:0;
+}
+
+.App {
+	width: 300px;
+	height: 287px;
+	display: flex;
+	flex-direction: column;
+	border: 1px;
+	justify-content: space-between;
+}
+
+.App p {
+	padding-top: 0.5rem;
+	text-align: center;
+}
+
+.App button {
+	font-family: 'Poppins', sans-serif;
+}
+
+.textFields {
+	margin: 0.5rem auto !important;
+}
+
+.button {
+	background: #2096F3 !important;
+	font-family: Poppins, sans-serif !important;
+	border-radius: 5px !important;
+	box-shadow: none !important;
+}
+
+.loginForm svg {
+	align-self: center;
+}
+
+.textField:hover{
+	cursor:default;
+}
