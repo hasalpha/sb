@@ -10,11 +10,9 @@ import { Typography } from "@mui/material";
 function App() {
   return (
     <FinanceContainer>
-      <FinanceBox backgroundColor="blue">
-        <Typography variant="h2">Total Revenue</Typography>
-      </FinanceBox>
+      <FinanceBox backgroundColor="blue" headerText="Total Revenue" content="20000" />
       <FinanceBox backgroundColor="red">Total Cost</FinanceBox>
-      <FinanceBox backgroundColor="red" children="Total Profit" />
+      <FinanceBox backgroundColor="green" children="Total Profit" />
     </FinanceContainer>
   );
 }
